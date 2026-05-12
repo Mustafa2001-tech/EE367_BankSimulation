@@ -3,19 +3,6 @@ Smart Bank Service Simulation System
 EE367 – Data Structures and Algorithms
 King Abdulaziz University – 202602
 
-HOW TO RUN
-----------
-1. Make sure Python 3.9+ is installed.
-
-2. Install dependencies:
-   pip install customtkinter matplotlib openpyxl
-
-3. Navigate to the Code folder:
-   cd Code
-
-4. Run the program:
-   python main.py
-
 FOUR SCENARIOS
 --------------
   Scenario 1 → Simple Queue  + Insertion Sort   (baseline)
@@ -52,4 +39,8 @@ Code/
 
 TEAM
 ----
-  [Add team member names and IDs here]
+1. Mustafa Abdelrahman Mohamed  : 2342671
+2. 
+3. 
+4.
+5.
