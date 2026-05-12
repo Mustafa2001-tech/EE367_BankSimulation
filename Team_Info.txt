@@ -1,0 +1,14 @@
+Team Information
+================
+Project: Smart Bank Service Simulation System
+Course:  EE367 – Data Structures and Algorithms
+Term:    202602
+University: King Abdulaziz University
+
+Team Members
+------------
+1. Name: ___________________  ID: ___________  Role: Simulation Engine
+2. Name: ___________________  ID: ___________  Role: Data Structures
+3. Name: ___________________  ID: ___________  Role: Algorithms
+4. Name: ___________________  ID: ___________  Role: GUI
+5. Name: ___________________  ID: ___________  Role: Performance & Report
