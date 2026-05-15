@@ -233,7 +233,7 @@ class MetricsDashboard(ctk.CTkFrame):
             for bar, val in zip(bars, vals):
                 ax.text(bar.get_x() + bar.get_width()/2,
                         bar.get_height() + max_val * 0.03,
-                        f"{val:.1f}", ha="center", va="bottom",
+                        f"{val:.3f}" if metric == "Throughput (c/s)" else f"{val:.1f}", ha="center", va="bottom",
                         color=TEXT, fontsize=6)
         fig.tight_layout(pad=1.0)
         canvas = FigureCanvasTkAgg(fig, master=self.chart_frame)
@@ -264,7 +264,7 @@ class MetricsDashboard(ctk.CTkFrame):
             for bar, val in zip(bars, vals):
                 ax.text(bar.get_x() + bar.get_width()/2,
                         bar.get_height() + max_val * 0.03,
-                        f"{val:.2f}", ha="center", va="bottom",
+                        f"{val:.3f}" if metric == "Throughput (c/s)" else f"{val:.2f}", ha="center", va="bottom",
                         color=TEXT, fontsize=7)
         fig.tight_layout()
         os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
