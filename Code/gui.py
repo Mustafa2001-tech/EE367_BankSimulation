@@ -371,8 +371,15 @@ class ControlPanel(ctk.CTkFrame):
         return int(self.counters_var.get())
 
     def get_duration(self) -> float:
-        try:    return float(self.duration_var.get())
-        except: return 120.0
+        try:
+            val = float(self.duration_var.get())
+            if val <= 0:
+                self.duration_var.set("120")
+                return 120.0
+            return min(val, 3600.0)
+        except ValueError:
+            self.duration_var.set("120")
+            return 120.0
 
     def get_arrival_rate(self) -> float:
         try:
@@ -455,6 +462,9 @@ class MainWindow:
             return
         if self.control.get_arrival_rate() <= 0:
             self.log.log("⚠️  Arrival rate must be greater than 0. Reset to 0.5.")
+            return
+        if self.control.get_duration() <= 0:
+            self.log.log("⚠️  Duration must be greater than 0. Reset to 120.")
             return
         scenario = self.control.get_scenario()
         self._reset_canvas()
