@@ -375,8 +375,15 @@ class ControlPanel(ctk.CTkFrame):
         except: return 120.0
 
     def get_arrival_rate(self) -> float:
-        try:    return max(0.1, min(float(self.arrival_var.get()), 5.0))
-        except: return 0.5
+        try:
+            val = float(self.arrival_var.get())
+            if val <= 0:
+                self.arrival_var.set("0.5")
+                return 0.5
+            return min(val, 5.0)
+        except ValueError:
+            self.arrival_var.set("0.5")
+            return 0.5
 
     def set_running(self, running: bool) -> None:
         self.btn_start.configure(state="disabled" if running else "normal")
@@ -446,12 +453,14 @@ class MainWindow:
     def _on_start(self) -> None:
         if self._sim and self._sim.running:
             return
+        if self.control.get_arrival_rate() <= 0:
+            self.log.log("⚠️  Arrival rate must be greater than 0. Reset to 0.5.")
+            return
         scenario = self.control.get_scenario()
         self._reset_canvas()
         self.log.log(f"\n{'═'*45}")
         self.log.log(f"  Starting {SCENARIO_LABELS[scenario]}")
         self.log.log(f"  Counters={self.control.get_counters()}, "
-                     f"Duration={self.control.get_duration()}s, "
                      f"Speed={self.control.get_speed()}x, "
                      f"ArrivalRate={self.control.get_arrival_rate()}")
         self.log.log(f"{'═'*45}")
