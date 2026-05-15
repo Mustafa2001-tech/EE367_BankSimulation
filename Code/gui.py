@@ -48,7 +48,7 @@ ORANGE  = "#FFA94D"
 BLUE    = "#74B9FF"
 
 SC_COLORS = {1: "#FF6B6B", 2: "#FFA94D", 3: "#74B9FF", 4: "#1DB954"}
-KPI_COLORS = {"Exec Time": RED, "Avg Wait": ORANGE, "Memory": BLUE, "Throughput": GREEN}
+KPI_COLORS = {"Exec Time": "#4A90D9", "Avg Wait": "#4A90D9", "Memory": "#4A90D9", "Throughput": "#4A90D9"}
 COUNTER_COLORS = {"free": "#1DB954", "busy": "#FF6B6B"}
 CUSTOMER_DOT = "#FFFFFF"
 
