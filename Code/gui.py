@@ -538,10 +538,21 @@ class MainWindow:
         results = self.dashboard.get_results_list()
         if not results:
             return
+        import shutil
         base       = os.path.join(os.path.dirname(__file__), "..", "Results")
         csv_path   = os.path.join(base, "Performance_Data.csv")
         xlsx_path  = os.path.join(base, "Performance_Data.xlsx")
         chart_path = os.path.join(base, "KPI_Comparison_Charts.png")
+
+        # Rotate current → previous before saving new files
+        for fp, prev in [
+            (csv_path,   os.path.join(base, "Performance_Data_previous.csv")),
+            (xlsx_path,  os.path.join(base, "Performance_Data_previous.xlsx")),
+            (chart_path, os.path.join(base, "KPI_Comparison_Charts_previous.png")),
+        ]:
+            if os.path.exists(fp):
+                shutil.move(fp, prev)   # rename current → previous
+
         export_csv(results, csv_path)
         export_xlsx(results, xlsx_path)
         self.dashboard.save_chart(chart_path)
