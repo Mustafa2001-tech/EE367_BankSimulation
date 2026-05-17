@@ -5,15 +5,14 @@ King Abdulaziz University – 202602
 
 HOW TO RUN
 ----------
-1. Make sure Python 3.9+ is installed.
 
-2. Install dependencies:
+1. Install dependencies:
    pip install customtkinter matplotlib openpyxl
 
-3. Navigate to the Code folder:
+2. Navigate to the Code folder:
    cd Code
 
-4. Run the program:
+3. Run the program:
    python main.py
 
 FOUR SCENARIOS
@@ -52,4 +51,4 @@ Code/
 
 TEAM
 ----
-  [Add team member names and IDs here]
+1. Mustafa Abdelrahman
