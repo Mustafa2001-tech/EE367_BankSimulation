@@ -1,14 +1,3 @@
-"""
-gui.py  (v2 — fixed)
-=====================
-Fixes applied:
-  1. Re-running a scenario replaces its slot in the chart (no duplicates)
-  2. Customer dots stack VERTICALLY below each counter
-  3. Each scenario has a fixed unique color in all charts and KPI cards
-  4. Removed top-right header text
-  5. Removed VIP/Elderly/Normal legend — customers shown as neutral dots
-  + Added arrival_rate control in the Control Panel
-"""
 
 from __future__ import annotations
 import queue
