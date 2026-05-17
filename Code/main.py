@@ -1,14 +1,5 @@
 """
 main.py
-=======
-Entry point for the Smart Bank Service Simulation System.
-
-EE367 – Data Structures and Algorithms
-King Abdulaziz University – 202602
-
-Usage
------
-    python main.py
 
 Requirements
 ------------
