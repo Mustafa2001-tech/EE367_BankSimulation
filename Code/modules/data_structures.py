@@ -11,7 +11,7 @@ All Big-O complexities are documented per method.
 """
 
 from __future__ import annotations
-from typing import Any, Optional
+from typing import Any
 
 
 # ═════════════════════════════════════════════════════════════════════════════

@@ -7,7 +7,6 @@ Exports KPI results to CSV and Excel (.xlsx).
 from __future__ import annotations
 import csv
 import os
-from datetime import datetime
 
 
 def export_csv(results: list[dict], filepath: str) -> None:

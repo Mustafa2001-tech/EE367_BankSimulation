@@ -18,7 +18,6 @@ can swap them without any other code changes.
 """
 
 from __future__ import annotations
-from typing import List
 from modules.entities import Customer
 from modules.data_structures import SimpleQueue, MinHeap
 
