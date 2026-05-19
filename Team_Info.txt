@@ -7,7 +7,7 @@ University: King Abdulaziz University
 
 Team Members
 ------------
-1. Name: Mustafa Abdelrahman Mohmed  ID: 2342671     Role: Algorithms
+1. Name: Mustafa Abdelrahman Mohmed  ID: 2342671     Role: Algorithms/Abstracts/Entities
 2. Name: Ahmad Shafa Ishaqzai        ID: 2250369     Role: Data Structures
 3. Name: Hasan Saud Nasser           ID: 2236466     Role: Simulation Engine
 4. Name: GIBRIL SISSE                ID: 2250735     Role: GUI
