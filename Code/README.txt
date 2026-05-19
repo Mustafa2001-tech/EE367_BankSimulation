@@ -17,10 +17,10 @@ HOW TO RUN
 
 FOUR SCENARIOS
 --------------
-  Scenario 1 → Simple Queue  + Insertion Sort   (baseline)
+  Scenario 1 → Simple Queue  + Insertion Sort   
   Scenario 2 → Min-Heap      + Insertion Sort
   Scenario 3 → Simple Queue  + Binary Search
-  Scenario 4 → Min-Heap      + Binary Search    (fully optimized)
+  Scenario 4 → Min-Heap      + Binary Search   
 
 USAGE
 -----
@@ -48,7 +48,3 @@ Code/
     simulation_engine.py        – SimulationEngine, BankSimulation
     performance_tracker.py      – PerformanceTracker
     exporter.py                 – CSV and Excel export
-
-TEAM
-----
-1. Mustafa Abdelrahman
