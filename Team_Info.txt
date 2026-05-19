@@ -7,8 +7,8 @@ University: King Abdulaziz University
 
 Team Members
 ------------
-1. Name: ___________________  ID: ___________  Role: Simulation Engine
-2. Name: ___________________  ID: ___________  Role: Data Structures
-3. Name: ___________________  ID: ___________  Role: Algorithms
-4. Name: ___________________  ID: ___________  Role: GUI
-5. Name: ___________________  ID: ___________  Role: Performance & Report
+1. Name: Mustafa Abdelrahman Mohmed  ID: 2342671     Role: Algorithms
+2. Name: Ahmad Shafa Ishaqzai        ID: 2250369     Role: Data Structures
+3. Name: Hasan Saud Nasser           ID: 2236466     Role: Simulation Engine
+4. Name: GIBRIL SISSE                ID: 2250735     Role: GUI
+5. Name: Abdulrahman Khawaja         ID: 2235899     Role: Performance tracker
